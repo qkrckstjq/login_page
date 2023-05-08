@@ -176,7 +176,9 @@ document.addEventListener('click',function(e){          //문서안에서 클릭
                     alert('입력하신 비밀번호가 다릅니다')
                 }
             
-            } else {                                                        //바꾸고자 하는 번호가 정규식에서 통과하지 못하면 실패
+            } else if(require.test(d_p) && d_p == c_p){                                                        //바꾸고자 하는 번호가 정규식에서 통과하지 못하면 실패
+                alert('기존의 비밀번호와 똑같습니다');
+            } else {
                 alert('비밀번호 양식을 확인해주세요');
             }
 
