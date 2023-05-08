@@ -164,7 +164,7 @@ document.addEventListener('click',function(e){          //문서안에서 클릭
         if(c_p == JSON.parse(localStorage.getItem('users'))[logined_id]['pw']) {    //로컬스토리지에 현재의 비밀번호를 조회하여 c_p와 맞다면
             let require = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/;
             let d_p = prompt('바꿀 비밀번호 입력하세요')                            //바꿀 비밀번호를 prompt로 입력받고 d_p에 저장 
-            if(require.test(d_p)) {                                           //입력받은 비밀번호가 형식에 맞는지 정규식으로 판별
+            if(require.test(d_p) && d_p != c_p) {                                           //입력받은 비밀번호가 형식에 맞는지 정규식으로 판별
                 let temp_p = d_p;                                             //맞다면 다시 한번 더 prompt로 입력받아 바꾼 비밀번호를 잘 입력했는지 확인하고 같으면 exist_users에서 수정하고 로컬스토리지에 저장
                 let rc_p = prompt('바꾼 비밀번호를 입력해주세요') 
                 if(temp_p == rc_p) {
