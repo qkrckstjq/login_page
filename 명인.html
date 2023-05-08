@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="./명인.css" rel="stylesheet">
+</head>
+<body>
+    <div class="signin__modal">
+        <div class="signin__wrapper">
+            <div class="input__box">
+                <p>이름</p>
+                <input class="user__name" type="text">
+                <p class="check__name">최소 2자 이상</p>
+            </div>
+            <div class="input__box">
+                <p>ID</p>
+                <input class="user__ID" type="text">
+                <p class="check__ID">최소 5자 이상</p>
+            </div>
+            <div class="input__box">
+                <p>전화번호</p>
+                <input class="user__phone" type="text">
+                <p class="check__phone">-제외 하고 입력</p>
+            </div>
+            <div class="input__box">
+                <p>비밀번호</p>
+                <input class="user__pw" type="password">
+                <p class="check__PW">대소문자,특수문자,8자</p>
+            </div>
+            <div class="input__box">
+                <p>비밀번호 확인</p>
+                <input class="user__pwrc" type="password">
+                <p class="check__pwrc">입력한 것과 다름</p>
+            </div>
+            
+            <div class="signin__btn__box">
+                <button class="signin__modal__cancle">취소</button>
+                <button class="signin__modal__signup">회원가입</button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <aside class="user__status ">
+        <div class="user_status__wrapper">
+            <div class="user__name__box">
+                <p>이름</p>
+                <p class="login__user__name">none</p>
+            </div>
+            <br>
+            <div class="user__ID__box">
+                <p>ID</p>
+                <p class="login__uesr__ID">none</p>
+            </div>
+            <br>
+            <div class="user__phone__box">
+                <p>전화번호</p>
+                <p class="login__user__phone">none</p>
+            </div>
+        </div>
+        <button class="logout__btn">로그아웃</button>
+        <button class="delete__user">회원탈퇴</button>
+        <button class="change__pw">비밀번호 변경</button>
+
+    </aside>
+
+    <main>
+        <nav class="nav__wrapper">
+            <button class="side__btn">=</button>
+            <p>Hello</p>
+            </nav>
+        
+        <div class="content__wrapper">
+            <div class="login__container">
+                <div class="IP__box">
+                    <p>ID</p>
+                    <input class="input__id" type="text" placeholder="ID">
+                </div>
+                <div class="IP__box">
+                    <p>PW</p>
+                    <input class="input__pw" type="password" placeholder="PASSWORD">
+                </div>
+                
+                <div class="login__signup__box">
+                    <button class="login">로그인</button>
+                    <button class="signin">회원가입</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button class="change__mode">라이트 모드</button>
+    <script src="명인.js"></script>
+</body>
+</html>
